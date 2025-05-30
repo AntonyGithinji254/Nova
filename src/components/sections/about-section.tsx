@@ -12,7 +12,7 @@ export default function AboutSection() {
             Hello! I&apos;m a passionate and creative individual with a love for technology and design. My journey in the digital world has been fueled by a curiosity to learn and a drive to build meaningful solutions.
           </p>
           <p className="text-lg text-foreground/80 mb-4">
-            With a strong foundation in web development and a keen eye for aesthetics, I strive to create interfaces that are not only functional but also delightful to use. I believe in continuous improvement and am always exploring new tools and techniques to enhance my skills.
+            With a strong foundation in web development and a keen eye for aesthetics, I strive to create interfaces that are not only functional but also delightful to use. My expertise includes HTML, CSS, Java, and JavaScript, and I am committed to continuous learning and exploring new technologies.
           </p>
           <p className="text-lg text-foreground/80">
             When I&apos;m not coding, you can find me exploring new coffee shops, reading a good book, or planning my next adventure.
