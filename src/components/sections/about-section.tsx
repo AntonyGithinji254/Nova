@@ -27,7 +27,7 @@ export default function AboutSection() {
                 width={600}
                 height={750}
                 className="object-cover w-full h-full"
-                data-ai-hint="person coding"
+                data-ai-hint="keyboard cleaning"
               />
             </CardContent>
           </Card>
