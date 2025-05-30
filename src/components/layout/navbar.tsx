@@ -58,7 +58,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
         <Link href="#home" onClick={(e) => scrollToSection(e, "#home")} className="text-2xl font-bold text-primary font-headline">
-          FolioForge
+          Portfolio
         </Link>
         <nav className="hidden md:flex items-center space-x-2">
           {navItems.map((item) => (

@@ -15,7 +15,7 @@ export default function AboutSection() {
             With a strong foundation in web development and a keen eye for aesthetics, I strive to create interfaces that are not only functional but also delightful to use. My expertise includes HTML, CSS, Java, and JavaScript, and I am committed to continuous learning and exploring new technologies.
           </p>
           <p className="text-lg text-foreground/80">
-            When I&apos;m not coding, you can find me exploring new coffee shops, reading a good book, or planning my next adventure.
+            When I&apos;m not coding, you can find me exploring new web features, reading books and even planning an adventure to clear my mind.
           </p>
         </div>
         <div className="order-1 md:order-2 flex justify-center">
