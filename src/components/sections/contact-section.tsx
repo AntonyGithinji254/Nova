@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Instagram, MessageSquare } from 'lucide-react'; // Using MessageSquare for WhatsApp
 
 const socialLinks = [
-  { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/syntaxx_smiles?igsh=MTh1eWNxamU2dHQ1aA==', color: 'hover:text-pink-500' },
-  { name: 'WhatsApp', icon: MessageSquare, url: 'https://wa.me/qr/MKMIVNUW3YXUL1', color: 'hover:text-green-500' },
+  { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/syntaxx_smiles?igsh=MTh1eWNxamU2dHQ1aA==', brandColor: 'text-pink-600' },
+  { name: 'WhatsApp', icon: MessageSquare, url: 'https://wa.me/qr/MKMIVNUW3YXUL1', brandColor: 'text-green-600' },
 ];
 
 export default function ContactSection() {
@@ -51,14 +51,12 @@ export default function ContactSection() {
                 {socialLinks.map((social) => (
                   <Button
                     key={social.name}
-                    variant="outline"
-                    size="icon"
-                    className={`border-border hover:border-accent ${social.color} transition-colors duration-300 rounded-full w-12 h-12`}
+                    className="p-0 rounded-full w-16 h-16 bg-card hover:bg-accent/10 border border-border focus:ring-2 focus:ring-ring transition-all duration-300 group"
                     asChild
                     aria-label={`Connect on ${social.name}`}
                   >
-                    <a href={social.url} target="_blank" rel="noopener noreferrer">
-                      <social.icon className="h-6 w-6" />
+                    <a href={social.url} target="_blank" rel="noopener noreferrer" className={`flex items-center justify-center w-full h-full rounded-full ${social.brandColor}`}>
+                      <social.icon className="h-8 w-8 group-hover:scale-110 transition-transform duration-200" />
                     </a>
                   </Button>
                 ))}
