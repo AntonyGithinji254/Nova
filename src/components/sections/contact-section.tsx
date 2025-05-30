@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Instagram, MessageSquare } from 'lucide-react'; // Using MessageSquare for WhatsApp
 
 const socialLinks = [
-  { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/syntaxx_smiles?igsh=MTh1eWNxamU2dHQ1aA==', brandColor: 'text-pink-600' },
-  { name: 'WhatsApp', icon: MessageSquare, url: 'https://wa.me/qr/MKMIVNUW3YXUL1', brandColor: 'text-green-600' },
+  { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/syntaxx_smiles?igsh=MTh1eWNxamU2dHQ1aA==', iconColor: '#E1306C' }, // Instagram brand color
+  { name: 'WhatsApp', icon: MessageSquare, url: 'https://wa.me/qr/MKMIVNUW3YXUL1', iconColor: '#25D366' },    // WhatsApp brand color
 ];
 
 export default function ContactSection() {
@@ -55,8 +55,8 @@ export default function ContactSection() {
                     asChild
                     aria-label={`Connect on ${social.name}`}
                   >
-                    <a href={social.url} target="_blank" rel="noopener noreferrer" className={`flex items-center justify-center w-full h-full rounded-full ${social.brandColor}`}>
-                      <social.icon className="h-8 w-8 group-hover:scale-110 transition-transform duration-200" />
+                    <a href={social.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full h-full rounded-full">
+                      <social.icon className="h-8 w-8 group-hover:scale-110 transition-transform duration-200" color={social.iconColor} />
                     </a>
                   </Button>
                 ))}
