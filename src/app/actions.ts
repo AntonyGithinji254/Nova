@@ -1,3 +1,4 @@
+
 "use server";
 
 import { z } from "zod";
@@ -38,12 +39,13 @@ export async function submitContactForm(
 
   const { name, email, message } = validatedFields.data;
 
-  // In a real application, you would send an email here.
-  // For this example, we'll just log it and simulate success.
-  console.log("Contact Form Submission:");
-  console.log("Name:", name);
-  console.log("Email:", email);
-  console.log("Message:", message);
+  // In a real application, you would integrate an email service (e.g., SendGrid, Resend)
+  // to send an email here. For this example, we'll log the details and simulate success.
+  console.log("Simulating contact form email submission...");
+  console.log("Recipient: kinguruantony@gmail.com");
+  console.log("From Name:", name);
+  console.log("From Email:", email);
+  console.log("Message Content:", message);
 
   // Simulate some processing time
   await new Promise(resolve => setTimeout(resolve, 1000));

@@ -1,3 +1,4 @@
+
 import { SectionWrapper } from '@/components/layout/section-wrapper';
 import { ContactForm } from '@/components/contact-form';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
@@ -5,8 +6,8 @@ import { Button } from '@/components/ui/button';
 import { Instagram, MessageSquare } from 'lucide-react'; // Using MessageSquare for WhatsApp
 
 const socialLinks = [
-  { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/syntaxx_smiles?igsh=MTh1eWNxamU2dHQ1aA==', iconColor: '#E1306C' }, // Instagram brand color
-  { name: 'WhatsApp', icon: MessageSquare, url: 'https://wa.me/qr/MKMIVNUW3YXUL1', iconColor: '#25D366' },    // WhatsApp brand color
+  { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/syntaxx_smiles?igsh=MTh1eWNxamU2dHQ1aA==', iconColor: '#E1306C' },
+  { name: 'WhatsApp', icon: MessageSquare, url: 'https://wa.me/qr/MKMIVNUW3YXUL1', iconColor: '#25D366' },
 ];
 
 export default function ContactSection() {
@@ -47,18 +48,20 @@ export default function ContactSection() {
               <CardTitle className="text-2xl text-primary">Connect With Me</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-6"> {/* Increased gap for labels */}
                 {socialLinks.map((social) => (
-                  <Button
-                    key={social.name}
-                    className="p-0 rounded-full w-16 h-16 bg-card hover:bg-accent/10 border border-border focus:ring-2 focus:ring-ring transition-all duration-300 group"
-                    asChild
-                    aria-label={`Connect on ${social.name}`}
-                  >
-                    <a href={social.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full h-full rounded-full">
-                      <social.icon className="h-8 w-8 group-hover:scale-110 transition-transform duration-200" color={social.iconColor} />
-                    </a>
-                  </Button>
+                  <div key={social.name} className="flex flex-col items-center gap-2">
+                    <Button
+                      className="p-0 rounded-full w-16 h-16 bg-card hover:bg-accent/10 border border-border focus:ring-2 focus:ring-ring transition-all duration-300 group"
+                      asChild
+                      aria-label={`Connect on ${social.name}`}
+                    >
+                      <a href={social.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full h-full rounded-full">
+                        <social.icon className="h-8 w-8 group-hover:scale-110 transition-transform duration-200" color={social.iconColor} />
+                      </a>
+                    </Button>
+                    <span className="text-sm text-foreground/80">{social.name}</span>
+                  </div>
                 ))}
               </div>
             </CardContent>
