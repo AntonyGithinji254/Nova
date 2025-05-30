@@ -2,14 +2,11 @@ import { SectionWrapper } from '@/components/layout/section-wrapper';
 import { ContactForm } from '@/components/contact-form';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Instagram, Facebook, MessageSquare } from 'lucide-react'; // Using MessageSquare for WhatsApp
+import { Instagram, MessageSquare } from 'lucide-react'; // Using MessageSquare for WhatsApp
 
 const socialLinks = [
-  { name: 'GitHub', icon: Github, url: 'https://github.com', color: 'hover:text-gray-700 dark:hover:text-gray-300' },
-  { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com', color: 'hover:text-blue-600' },
-  { name: 'Instagram', icon: Instagram, url: 'https://instagram.com', color: 'hover:text-pink-500' },
-  { name: 'Facebook', icon: Facebook, url: 'https://facebook.com', color: 'hover:text-blue-700' },
-  { name: 'WhatsApp', icon: MessageSquare, url: 'https://wa.me/yourphonenumber', color: 'hover:text-green-500' }, // Replace with actual WhatsApp link
+  { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/syntaxx_smiles?igsh=MTh1eWNxamU2dHQ1aA==', color: 'hover:text-pink-500' },
+  { name: 'WhatsApp', icon: MessageSquare, url: 'https://wa.me/qr/MKMIVNUW3YXUL1', color: 'hover:text-green-500' },
 ];
 
 export default function ContactSection() {
