@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'; // Added this line
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -76,7 +76,7 @@ export default function Navbar() {
         </nav>
         <div className="flex items-center space-x-4">
             <Image
-                src="https://placehold.co/80x80.png"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsMtzvl_5Ntwh5LXnVtYgqY1xmD_0Z1A18ot-ukKje_YfT19zSrUveFBiNXdr4gTgN9vU&usqp=CAU"
                 alt="Personal Avatar"
                 width={48}
                 height={48}
