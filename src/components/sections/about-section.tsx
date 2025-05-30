@@ -22,12 +22,12 @@ export default function AboutSection() {
           <Card className="w-full max-w-md overflow-hidden shadow-2xl rounded-xl transform transition-all duration-500 hover:scale-105">
             <CardContent className="p-0">
               <Image
-                src="https://placehold.co/600x750.png"
+                src="https://i.imgur.com/XViaUmC.png"
                 alt="About Me Image"
                 width={600}
                 height={750}
                 className="object-cover w-full h-full"
-                data-ai-hint="keyboard cleaning"
+                data-ai-hint="personal photo"
               />
             </CardContent>
           </Card>
