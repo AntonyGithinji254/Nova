@@ -11,8 +11,8 @@ export default {
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
-        code: ['monospace'],
+        headline: ['Algerian', 'Inter', 'sans-serif'], // Changed to Algerian with Inter as fallback
+        code: ['monospace', 'monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -93,6 +93,9 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      boxShadow: {
+        'glow-accent': '0 0 15px 2px hsl(var(--accent) / 0.6)',
+      }
     },
   },
   plugins: [require('tailwindcss-animate')],
