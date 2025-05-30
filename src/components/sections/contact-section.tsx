@@ -36,9 +36,9 @@ export default function ContactSection() {
               <CardTitle className="text-2xl text-primary">Contact Information</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-foreground/80">
-              <p><strong>Email:</strong> your.email@example.com</p>
-              <p><strong>Phone:</strong> +1 (234) 567-8900 (Optional)</p>
-              <p><strong>Location:</strong> Your City, Your Country</p>
+              <p><strong>Email:</strong> kinguruantony@gmail.com</p>
+              <p><strong>Phone:</strong> 0708626487</p>
+              <p><strong>Location:</strong> Kenya</p>
             </CardContent>
           </Card>
           

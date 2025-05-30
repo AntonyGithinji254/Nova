@@ -22,7 +22,7 @@ export default function AboutSection() {
           <Card className="w-full max-w-md overflow-hidden shadow-2xl rounded-xl transform transition-all duration-500 hover:scale-105">
             <CardContent className="p-0">
               <Image
-                src="https://i.imgur.com/XViaUmC.png"
+                src="https://i.imgur.com/7t2lsCs.png"
                 alt="About Me Image"
                 width={600}
                 height={750}
