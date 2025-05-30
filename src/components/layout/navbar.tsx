@@ -78,8 +78,8 @@ export default function Navbar() {
             <Image
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsMtzvl_5Ntwh5LXnVtYgqY1xmD_0Z1A18ot-ukKje_YfT19zSrUveFBiNXdr4gTgN9vU&usqp=CAU"
                 alt="Personal Avatar"
-                width={48}
-                height={48}
+                width={72}
+                height={72}
                 className="rounded-full border-2 border-primary object-cover"
                 data-ai-hint="professional portrait"
             />
