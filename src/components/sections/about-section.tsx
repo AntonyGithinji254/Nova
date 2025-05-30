@@ -1,3 +1,4 @@
+
 import { SectionWrapper } from '@/components/layout/section-wrapper';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
@@ -22,12 +23,12 @@ export default function AboutSection() {
           <Card className="w-full max-w-md overflow-hidden shadow-2xl rounded-xl transform transition-all duration-500 hover:scale-105">
             <CardContent className="p-0">
               <Image
-                src="https://i.imgur.com/7t2lsCs.png"
+                src="https://cdn.prod.website-files.com/66619549eba8f39855e63f8a/66de8d2aaf85340e40ca7698_software-developer.jpeg"
                 alt="About Me Image"
                 width={600}
                 height={750}
                 className="object-cover w-full h-full"
-                data-ai-hint="personal photo"
+                data-ai-hint="software developer"
               />
             </CardContent>
           </Card>
